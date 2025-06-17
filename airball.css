@@ -1,0 +1,28 @@
+*{
+  margin:0;
+  padding:0;
+  list-style:none;
+  text-decoration:none;
+ }
+ .hdr{
+  width:100%;
+  height:100px;
+  display:block;
+  background-color: #a0b;
+ }
+ .inn{
+  width:808px;
+  height:80px;
+  display:block;
+  margin:0 auto;
+  background-color:#c3d;
+  position:inherit;
+ }
+ .aut{
+  position:inherit;
+   color:white;
+   margin:auto;
+  text-align: center;
+     font-family:monospace;
+
+ }
