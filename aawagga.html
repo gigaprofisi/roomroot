@@ -11,9 +11,8 @@
 
 
 
-   $.getJSON('./splashes.json', function(data) {
-    console.log(data)
-       document.getElementById("splash").innerHTML=data[5]
+   $.getJSON('./splashes.json', function(d) {
+       document.getElementById("splash").innerHTML=d[Math.floor(Math.random()*d.length)]
 
    })
 
@@ -22,7 +21,8 @@
   </head>
   <body>
     <p>aawagga my son</p>
-<label id="splash"></label>
+    <div id="header">
+<label id="splash"></label></div>
 
   </body>
 </html>
