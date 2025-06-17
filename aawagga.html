@@ -3,8 +3,29 @@
   <head>
     <title>aawagga my son</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+
+
+
+   $.getJSON('./splashes.json', function(data) {
+    console.log(data)
+       document.getElementById("splash").innerHTML=data[5]
+
+   })
+
+})
+</script>
   </head>
   <body>
     <p>aawagga my son</p>
+<label id="splash"></label>
+
   </body>
 </html>
+
+
+  
