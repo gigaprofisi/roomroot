@@ -1,7 +1,7 @@
 $(function() {
-  $.getJSON('./splashes.js', function(d){
+  $.getJSON('./splashes.json', function(d){
     document.getElementById("splash").innerHTML=d[Math.floor(Math.random()*d.length)]
   })
 })
-//throw new Error();
-console.log("wack")
+
+throw new Error("okay");
