@@ -1,5 +1,5 @@
 $(function() {
-  $.getJSON('./splashes.json', function(d){
+  $.getJSON('./splashes.js', function(d){
     document.getElementById("splash").innerHTML=d[Math.floor(Math.random()*d.length)]
   })
 })
