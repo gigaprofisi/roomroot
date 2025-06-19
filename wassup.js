@@ -4,4 +4,4 @@ $(function() {
   })
 })
 
-//throw new Error("okay");
+throw new Error("okay");
