@@ -3,4 +3,4 @@ $(function() {
     document.getElementById("splash").innerHTML=d[Math.floor(Math.random()*d.length)]
   })
 })
-throw new Error();
+//throw new Error();
