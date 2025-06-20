@@ -1,7 +1,5 @@
 $(function() {
-  $.getJSON('./splashes.json', function(d){
-    document.getElementById("splash").innerHTML=d[Math.floor(Math.random()*d.length)]
-  })
+    document.getElementById("splash").innerHTML=splashes[Math.floor(Math.random()*d.length)]
 })
 
-throw "okay"
+throw "ball, go catch it Good boy"
