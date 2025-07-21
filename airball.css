@@ -26,3 +26,15 @@
      font-family:monospace;
 
  }
+
+
+
+.rotate_aawagga {
+ animation: Rotate 6s normal linear infinite;
+}
+
+@keyframes Rotate {
+ to {
+  transform: rotate3d(0,0,1,360deg)
+ }
+}
