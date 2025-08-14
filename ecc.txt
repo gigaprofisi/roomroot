@@ -1,0 +1,60 @@
+!!!!!!!!WORK IN PREGRESS !!,!, IDK WHAT IM DOING
+
+
+
+Let ꟻ be the set of all ordered pairs of finite rational numbers, adjoined with a unique infinity element.
+  ꟻ := {∀ab ∈ ℚ : (a,b)} ∪ (∞,∞)
+Elements of ꟻ have two parts, x and y, and ge.
+(For example, P ∈ ꟻ : P=(5,2), then Px=5, Py=2.)
+
+
+
+No new operations are defined on ꟻ. Only operations on the individual coordinates over ℚ are defined.
+
+
+ 
+ꟻ may be referred to as the "closed rational plane".
+
+
+
+An elliptic curve 𝔼(a,b) is defined over P ∈ ꟻ, with constants ab ∈ ℚ. It
+is the subset of all ꟻ that satisfies Px^3 + aPx + b - Py^2 = 0.
+
+b is a free constant, so the space 𝔼(a) 
+
+
+------
+
+For arbitrary finite unique A, B ∈ ꟻ, there is exactly one elliptic
+curve 𝔼(a,b) that passes through A,B.
+
+------
+
+ℚ
+
+∞ := ( ∞, ∞ )
+
+∼ A := ( Ax, -Ay )
+
+A ⊙ B :=
+  if A≠B: (
+    ((Ay - By)/(Ax - Bx))^2 - Ax - Bx,
+    (((Ay - By)/(Ax - Bx))^2 - 2Ax - Bx)(Ay-By)/(Ax-Bx) + Ay
+  )
+  if A=B: (
+    ((3Ax^2 + a)/(2Ay))^2 - 2Ax,
+    ((3Ax^2 + a)/(2Ay))^3 - 3(3Ax^3 + aAx)/(2Ay) + Ay
+  )
+
+One can verify that if A,B ∈ 𝔼(a,b), then ∼A and A⊙B are unique valid elements of 𝔼(a,b).
+
+For the A≠B case of ⊙, notice that the constant "a" is not present.
+It would be convenient if this were true generally, but unfortunately,
+the edge case A⊙A requires it to be present due to the existence of
+multiple limit points.
+
+Under the geometric definition of ⊙, it is perfectly acceptible: just
+take the limit along the curve. This is not possible without defining the
+elliptic curve initially, as the field is not singular at every point.
+
+-- Other formulas --
