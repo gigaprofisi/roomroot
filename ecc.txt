@@ -2,18 +2,14 @@
 
 
 
-Let ꟻ be the set of all ordered pairs of finite rational numbers, adjoined with a unique infinity element.
+Let ꟻ be the set of all ordered pairs of signed finite ℚ, adjoined with a unique infinity element.
   ꟻ := {∀ab ∈ ℚ : (a,b)} ∪ (∞,∞)
-Elements of ꟻ have two parts, x and y, and ge.
-(For example, P ∈ ꟻ : P=(5,2), then Px=5, Py=2.)
+Elements of ꟻ have two parts, x and y, and are identified by
+juxtaposition. (For example, P ∈ ꟻ : P=(5,2), then Px=5, Py=2.)
 
 
 
-No new operations are defined on ꟻ. Only operations on the individual coordinates over ℚ are defined.
-
-
- 
-ꟻ may be referred to as the "closed rational plane".
+No new operations are defined on elements ꟻ. Only new elements are constructed from operations on the individual coordinates over ℚ.
 
 
 
@@ -32,26 +28,35 @@ curve 𝔼(a,b) that passes through A,B.
 
 ℚ
 
-∞ := ( ∞, ∞ )
+the identity ∞ := ( ∞, ∞ )
 
-∼ A := ( Ax, -Ay )
+the inverse operation ∼ A := ( Ax, -Ay )
 
-A ⊙ B :=
+the binary operation A ⊙ B :=
   if A≠B: (
     ((Ay - By)/(Ax - Bx))^2 - Ax - Bx,
-    (((Ay - By)/(Ax - Bx))^2 - 2Ax - Bx)(Ay-By)/(Ax-Bx) + Ay
+    (((Ay - By)/(Ax - Bx))^2 - 2Ax - Bx)(Ay - By)/(Ax - Bx) + Ay
   )
   if A=B: (
     ((3Ax^2 + a)/(2Ay))^2 - 2Ax,
     ((3Ax^2 + a)/(2Ay))^3 - 3(3Ax^3 + aAx)/(2Ay) + Ay
   )
 
-One can verify that if A,B ∈ 𝔼(a,b), then ∼A and A⊙B are unique valid elements of 𝔼(a,b).
+And with some defined edge cases regarding the identity,
+  ∞⊙∞ = ∞
+  ∼∞ = ∞
+
+One can verify that if A,B ∈ 𝔼(a), then ∼A and A⊙B are unique valid elements of 𝔼(a).
+
+The algebraic structure (ꟻ, ∞, ∼p, p⊙q) forms an abelian group under 𝔼(a).
+
 
 For the A≠B case of ⊙, notice that the constant "a" is not present.
 It would be convenient if this were true generally, but unfortunately,
-the edge case A⊙A requires it to be present due to the existence of
-multiple limit points.
+the edge case A⊙A requires this constant to be present due to the
+existence of multiple valid limit points.
+
+
 
 Under the geometric definition of ⊙, it is perfectly acceptible: just
 take the limit along the curve. This is not possible without defining the
