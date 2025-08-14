@@ -172,4 +172,7 @@ const splashes=[
   _=>"Welcome to roomroot.net, the worst show on television!",
   _=>"Keep it hammy",
   _=>"Investigate 3/11",
+  _=>"shrinks you and puts you in a blender",
+  _=>"Lost in the woods? No worries .",
 ]
+
