@@ -1,3 +1,10 @@
+
+import { frankel_1 } from './data/frankel1.js';
+
+console.log(
+  frankel_1
+)
+
 const splashes=[
   _=>"roomroot",
   _=>"aawagga",
@@ -175,4 +182,5 @@ const splashes=[
   _=>"shrinks you and puts you in a blender",
   _=>"Lost in the woods? No worries .",
 ]
+
 
