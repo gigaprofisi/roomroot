@@ -1,4 +1,5 @@
-const frankel1 = `"Well, if I really were to assign blame
+
+export function frankel_1() {return `"Well, if I really were to assign blame
 I would assign the blame to myself, and my colleagues, professional mathematicians.
 We don't do nearly enough exposing these ideas to the public in an accessible way.
 Often times we are not willing to come up with good metaphors and analogies
@@ -23,4 +24,4 @@ Wouldn't you want to go and find out more about it?
 This is the coolest stuff in the world.
 And yet everyone hates it. Isn't it ironic?"
 
-- Edward Frankel, Numberphile, "Why do people hate mathematics?"`
+- Edward Frankel, Numberphile, "Why do people hate mathematics?"`}
