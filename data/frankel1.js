@@ -12,7 +12,7 @@ I don't blame the teachers, because they are in the precarious, really unenviabl
 
 My solution is that, first of all, more mathematicians should go out and let other people in on the secret.
 Because it's really almost like a secret, and we're almost like this elite which is keeping that secret, and I don't want that to continue.
-I want everyone in on the secret. I want everyone to realize that there is this beautiful world out there, which is so important for our daily lives, which posesses this unparalleled power and beauty.
+I want everyone in on the secret. I want everyone to realize that there is this beautiful world out there, which is so important for our daily lives, which possesses this unparalleled power and beauty.
 We have to convey these ideas; we have to find ways to convey those ideas.
 And then we also have to work through our education system.
 We have to help teachers learn the nescessary content and to learn how mathematics connects with the real world, so that they make the study of mathematics for students more enjoyable, more fun, more interesting.
