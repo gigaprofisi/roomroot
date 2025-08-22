@@ -15,7 +15,7 @@ Because it's really almost like a secret, and we're almost like this elite which
 I want everyone in on the secret. I want everyone to realize that there is this beautiful world out there, which is so important for our daily lives, which possesses this unparalleled power and beauty.
 We have to convey these ideas; we have to find ways to convey those ideas.
 And then we also have to work through our education system.
-We have to help teachers learn the nescessary content and to learn how mathematics connects with the real world, so that they make the study of mathematics for students more enjoyable, more fun, more interesting.
+We have to help teachers learn the necessary content and to learn how mathematics connects with the real world, so that they make the study of mathematics for students more enjoyable, more fun, more interesting.
 
 Why has it not already happened? Well sometimes I wonder myself, why has it not already happened.
 It's almost a conspiracy, I mean honestly... it's almost like there's a system of mirrors that has been created which distorts reality.
