@@ -1,0 +1,10 @@
+{ "name":"Main Theorem of QTKE-groups",
+  "pre":"",
+  "prop":[
+    "The finite nonabelian simple QTKE-groups consist of the following:",
+      "(1) Groups of Lie type of characteristic 2 and Lie rank at most 2, but U(5,q) only for q = 4.",
+      "(2) PSL(2,p) for Mersenne primes and Fermat primes.",
+      "(3) The groups Alt5, Alt6, Alt8, Alt9, M11, M12, M22, M23, M24, HS, He, Ru, J2, J3, and J4.",
+      "(4) The groups PSL(4,2), PSL(5,2), Sp(6,2), G(2,3), Lep(3,3), and Lep(4,3).",
+  ],
+}
