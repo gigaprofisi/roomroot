@@ -1,8 +1,8 @@
 
-import { frankel_1 } from './data/frankel1.js';
+//import { frankel_1 } from './data/frankel1.js';    don't
 
 console.log(
-  frankel_1
+//  frankel_1
 )
 
 const splashes=[
@@ -182,5 +182,6 @@ const splashes=[
   _=>"shrinks you and puts you in a blender",
   _=>"Lost in the woods? No worries .",
 ]
+
 
 
