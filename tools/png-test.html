@@ -56,7 +56,7 @@ input.addEventListener("change", function() {
 
   file = input.files[0];
   if (input.files.length == 0) throw("NO FILE")
-  else if (file.type!="image/png") throw("BAD FILE")
+ // else if (file.type!="image/png") throw("BAD FILE")
   else {
     console.log(`"${file.name}", ${file.size} B`)
     document.getElementById("imgin").src = URL.createObjectURL(file);
