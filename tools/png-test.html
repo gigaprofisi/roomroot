@@ -1,24 +1,20 @@
 <style>
 
 form {
-  background: #efa;
+  background: #fcc;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid black;
 }
 
-form ol {
-  padding-left: 0;
-}
 
-form img {
+img {
   height: 64px;
   order: 1;
 }
 
 
-form label,
-form button {
+form label {
   background-color: #7f9ccb;
   padding: 5px 10px;
   border-radius: 5px;
@@ -27,14 +23,12 @@ form button {
   height: auto;
 }
 
-form label:hover,
-form button:hover {
+form label:hover{
   background-color: #2d5ba3;
   color: white;
 }
 
-form label:active,
-form button:active {
+form label:active {
   background-color: #0d3f8f;
   color: white;
 }
@@ -52,26 +46,18 @@ form button:active {
 
 <script>
   const input = document.querySelector("input");
-const preview = document.querySelector(".preview");
 
-input.style.opacity = 0;
 input.addEventListener("change", function() {
 
 
   const file = input.files[0];
   if (input.files.length == 0) throw("NO FILE")
-  else 
-
-
-      if (file.type=="image/png") {
-        console.log(`"${file.name}", ${file.size} B`)
-        document.getElementById("aaa").src = URL.createObjectURL(file);
-
-      } else throw("BAD FILE")
+  else if (file.type!="image/png") throw("BAD FILE")
+  else {
+    console.log(`"${file.name}", ${file.size} B`)
+    document.getElementById("aaa").src = URL.createObjectURL(file);
+  }
 
     
-  
-});
-// https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types
-
+})
 </script>
