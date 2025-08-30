@@ -1,7 +1,7 @@
 <style>
 
 form {
-  background: #fce;
+  background: #fee;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid black;
@@ -58,6 +58,7 @@ input.addEventListener("change", function() {
   else {
     console.log(`"${file.name}", ${file.size} B`)
     document.getElementById("aaa").src = URL.createObjectURL(file);
+    console.log(file)
   }
 
     
