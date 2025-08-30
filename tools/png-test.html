@@ -1,7 +1,7 @@
 <style>
 
 form {
-  background: #fee;
+  background: #efe;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid black;
@@ -48,17 +48,19 @@ form input{opacity:0}
 
 <script>
   const input = document.querySelector("input");
-
+var file
 input.addEventListener("change", function() {
 
 
-  const file = input.files[0];
+  file = input.files[0];
   if (input.files.length == 0) throw("NO FILE")
   else if (file.type!="image/png") throw("BAD FILE")
   else {
     console.log(`"${file.name}", ${file.size} B`)
     document.getElementById("aaa").src = URL.createObjectURL(file);
-    console.log(file)
+    console.log(
+      file
+    )
   }
 
     
