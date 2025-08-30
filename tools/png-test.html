@@ -11,25 +11,11 @@ form ol {
   padding-left: 0;
 }
 
-form li,
-div > p {
-  background: #eeeeee;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  list-style-type: none;
-  border: 1px solid black;
-}
-
 form img {
   height: 64px;
   order: 1;
 }
 
-form p {
-  line-height: 32px;
-  padding-left: 10px;
-}
 
 form label,
 form button {
@@ -57,21 +43,11 @@ form button:active {
 
 <form method="post" enctype="multipart/form-data">
   <div>
-    <label for="image_uploads">Choose images to upload (PNG, JPG)</label>
-    <input
-      type="file"
-      id="image_uploads"
-      name="image_uploads"
-      accept="image/png"
-      />
+    <label for="image_uploads">Select local PNG file</label>
+    <input type="file"
+      id="image_uploads" name="image_uploads" accept="image/png" />
   </div>
-  <div class="preview">
-    <p>No files currently selected for upload</p>
-  </div>
-  <div>
-    <button>Submit</button>
-  </div>
-  <img id="aaa" height="160">
+  <img id="aaa">
 </form>
 
 <script>
@@ -83,43 +59,19 @@ input.addEventListener("change", function() {
 
 
   const file = input.files[0];
-  if (input.files.length === 0) {
-    const para = document.createElement("p");
-    para.textContent = "No files currently selected for upload";
-    preview.appendChild(para);
-  } else {
+  if (input.files.length == 0) throw("NO FILE")
+  else 
 
 
-      const para = document.createElement("p");
       if (file.type=="image/png") {
-        console.log(`File name ${file.name}, file size ${returnFileSize(
-          file.size,
-        )}`)
+        console.log(`"${file.name}", ${file.size} B`)
         document.getElementById("aaa").src = URL.createObjectURL(file);
 
-      } else {
-        console.log("BAD FILE")
-      }
+      } else throw("BAD FILE")
 
     
-  }
+  
 });
 // https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types
-
-function returnFileSize(number) {
-  if (number < 1e3) {
-    return `${number} bytes`;
-  } else if (number >= 1e3 && number < 1e6) {
-    return `${(number / 1e3).toFixed(1)} KB`;
-  }
-  return `${(number / 1e6).toFixed(1)} MB`;
-}
-const button = document.querySelector("form button");
-button.addEventListener("click", (e) => {
-  e.preventDefault();
-  const para = document.createElement("p");
-  para.append("Image uploaded!");
-  preview.replaceChildren(para);
-});
 
 </script>
