@@ -1,7 +1,7 @@
 <style>
 
 form {
-  background: #ace;
+  background: #efa;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid black;
@@ -79,11 +79,8 @@ form button:active {
 const preview = document.querySelector(".preview");
 
 input.style.opacity = 0;
-input.addEventListener("change", updateImageDisplay);
-function updateImageDisplay() {
-  while (preview.firstChild) {
-    preview.removeChild(preview.firstChild);
-  }
+input.addEventListener("change", function() {
+
 
   const file = input.files[0];
   if (input.files.length === 0) {
@@ -91,33 +88,22 @@ function updateImageDisplay() {
     para.textContent = "No files currently selected for upload";
     preview.appendChild(para);
   } else {
-    const list = document.createElement("ol");
-    preview.appendChild(list);
 
 
-      const listItem = document.createElement("li");
       const para = document.createElement("p");
       if (file.type=="image/png") {
-        para.textContent = `File name ${file.name}, file size ${returnFileSize(
+        console.log(`File name ${file.name}, file size ${returnFileSize(
           file.size,
-        )}.`;
-        const image = document.createElement("img");
+        )}`)
         document.getElementById("aaa").src = URL.createObjectURL(file);
 
-        image.src = URL.createObjectURL(file);
-        image.alt = image.title = file.name;
-
-        listItem.appendChild(image);
-        listItem.appendChild(para);
       } else {
-        para.textContent = `File name ${file.name}: Not a valid file type. Update your selection.`;
-        listItem.appendChild(para);
+        console.log("BAD FILE")
       }
 
-      list.appendChild(listItem);
     
   }
-}
+});
 // https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types
 
 function returnFileSize(number) {
