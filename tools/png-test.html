@@ -1,14 +1,14 @@
 <style>
 
 form {
-  background: #efe;
+  background: #eef;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid black;
 }
 
 
-img {
+#imgin {
   height: 64px;
   order: 1;
 }
@@ -33,23 +33,23 @@ form label:active {
   color: white;
 }
 
-form input{opacity:0}
+#upload{opacity:0}
 
 </style>
 
 <form method="post" enctype="multipart/form-data">
   <div>
     <label for="image_uploads">Select local PNG file</label>
-    <input type="file"
-      id="image_uploads" name="image_uploads" accept="image/png" />
+    <input type="file" id="upload" name="image_uploads" accept="image/png" />
   </div>
-  <img id="aaa">
+  <img id="imgin">
 </form>
 
 <script>
-  const input = document.querySelector("input");
+
 var file
-input.addEventListener("change", function() {
+
+ document.querySelector("input").addEventListener("change", function() {
 
 
   file = input.files[0];
@@ -57,10 +57,12 @@ input.addEventListener("change", function() {
   else if (file.type!="image/png") throw("BAD FILE")
   else {
     console.log(`"${file.name}", ${file.size} B`)
-    document.getElementById("aaa").src = URL.createObjectURL(file);
-    console.log(
-      file
-    )
+    document.getElementById("imgin").src = URL.createObjectURL(file);
+    file.arrayBuffer().then(e=>{
+      const data=new Uint8Array(e)
+      console.log(data)
+    })
+  
   }
 
     
