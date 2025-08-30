@@ -13,8 +13,10 @@
     
     </table>
     <script>
+      var p=""
       for(let i=0;i<168;i++)
-        document.getElementById("waga").innerHTML+=`<tr><td>${psl[i].join(`</td><td>`)}</td></tr>`
+        p+=`<tr><td>${psl[i].join(`</td><td>`)}</td></tr>`
+      document.getElementById("waga").innerHTML+=p
     </script>
   </body>
 </html>
