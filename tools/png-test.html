@@ -71,7 +71,7 @@ form button:active {
   <div>
     <button>Submit</button>
   </div>
-  <img id="aaa">
+  <img id="aaa" height="160">
 </form>
 
 <script>
@@ -102,6 +102,8 @@ function updateImageDisplay() {
           file.size,
         )}.`;
         const image = document.createElement("img");
+        document.getElementById("aaa").src = URL.createObjectURL(file);
+
         image.src = URL.createObjectURL(file);
         image.alt = image.title = file.name;
 
