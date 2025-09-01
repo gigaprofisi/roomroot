@@ -1,0 +1,19 @@
+x{
+  border:2px solid black;
+  display:inline-block;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  
+  background-color: khaki;
+  
+  background-color: mediumorchid;
+  background-color: white;
+}
+.ass{
+  background-color: plum;
+
+}
+.def{ background-color: aquamarine; }
+.conc{ background-color: salmon; }
+.any { background-color:linen; }
+.let { background-color:lightblue; }
