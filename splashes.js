@@ -181,7 +181,9 @@ const splashes=[
   _=>"Investigate 3/11",
   _=>"shrinks you and puts you in a blender",
   _=>"Lost in the woods? No worries .",
+  _=>"you were a gun for a second",
 ]
+
 
 
 
